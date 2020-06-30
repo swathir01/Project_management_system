@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/domain"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/employees"
+            android:icon="@drawable/employees"
+            android:title="@string/Employees" />
+        <item
+            android:id="@+id/projects"
+            android:icon="@drawable/projects"
+            android:title="@string/Projects" />
+    </group>
+    <item android:title="@string/Manage">
+        <menu>
+          <item
+              android:id="@+id/view_database"
+              android:title="@string/view_database"
+              android:icon="@drawable/view_database1"/>
+            <item
+                android:id="@+id/view_status"
+                android:title="View Status"
+                android:icon="@drawable/flowchart"/>
+        </menu>
+    </item>
+
+</menu>

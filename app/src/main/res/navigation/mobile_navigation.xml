@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.projectmanagement.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+
+       <!-- <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/view_database"
+        android:name="com.example.projectmanagement.ui.database.ViewDatabase"
+        android:label="@string/view_database"
+        tools:layout="@layout/fragment_viewdatabase">
+
+    </fragment>
+    <fragment
+        android:id="@+id/view_status"
+        android:name="com.example.projectmanagement.ui.status.ViewStatus"
+        android:label="View Status"
+        tools:layout="@layout/fragment_viewstatus">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/employees"
+        android:name="com.example.projectmanagement.ui.employees.EmployeesFragment"
+        android:label="@string/menu_employees"
+        tools:layout="@layout/fragment_employees" />
+
+    <fragment
+        android:id="@+id/projects"
+        android:name="com.example.projectmanagement.ui.projects.ProjectsFragment"
+        android:label="@string/menu_projects"
+        tools:layout="@layout/fragment_projects" />
+</navigation>
